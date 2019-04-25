@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box
 }
 
@@ -6,23 +6,29 @@
   background-color: white;
   display: flex;
   justify-content: flex-end;
+  height: 38px;
 }
 
 .topnav a {
   color: black;
   text-align: center;
-  padding: 14px 16px;
-  font-size: 17px;
+  padding: 0px 5px;
+  font-size: 30px;
+  text-decoration: none;
+  border-bottom: 4px solid white;
+  transition-duration: 0.5s;
+  font-weight: 200;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
   color: black;
+  border-bottom: 4px solid yellow;
 }
 
 .user {
   width: 20px;
-  height: 20px;
+  height: 23px;
+  margin: 0px 0px;
 }
 
 .main {
@@ -31,7 +37,8 @@
   background-image: url('mountains.jpg');
   background-size: cover;
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: center;
+
 }
 
 body {
@@ -40,10 +47,11 @@ body {
 }
 
 .story {
-  width: 600px;
+  width: 900px;
   height: 1000px;
-  margin: 0px auto;
+  margin: 0px 0px;
   justify-content: center;
+  border: 1px solid black;
 }
 
 .title {
@@ -56,7 +64,8 @@ body {
 
 .article {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  height: 175px;
 }
 
 .h4 {
@@ -64,24 +73,32 @@ body {
   text-shadow: 3px 3px black;
   color: white;
   text-align: center;
+
+  margin: 2px 2px;
 }
 
 .small_picture {
-  width: 100px;
-  height: 100px;
+  float: left;
+  width: 145px;
+  height: 145px;
+  border-radius: 10px;
 }
 
 .p {
   color: white;
   font-weight: 700;
   padding: 0px 10px;
+  margin: 2px 2px;
 }
 
-img{
-  border-radius: 10px;
-}
-
-.slideshow{
-  width:100%;
+.slideshow {
+  width: 100%;
   height: 1000px;
+}
+
+.next_to_stories {
+  border: 1px solid black;
+  height: 1000px;
+  width: 600px;
+  margin: 0px 0px;
 }
