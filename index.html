@@ -8,6 +8,7 @@
     <title>Index</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 
 <body>
@@ -15,29 +16,28 @@
         <nav>
             <a href="index.html">Flights</a>
             <a href="#news">Tickets</a>
-            <a href="signup.html"><img id="user"
-                    src="user_icon.png"></a>
+            <a href="signup.html"><img id="user" src="user_icon.png"></a>
             <a href="#about">About</a>
         </nav>
     </div>
     <section class="main">
         <div class="story">
-            <h4 class="h4">Czech Republic</h4>
-            <p class="p">The Czech Republic is not a geographically large country, but it has a rich and eventful history. From
-                time immemorial, Czechs, Germans, Jews and Slovaks, as well as Italian stonemasons and stucco workers,
-                French tradesmen and deserters from Napoleon’s army, have all lived and worked here, all influencing one
-                another. For centuries they jointly cultivated their land, creating works that still command respect and
-                admiration today. It is thanks to their inventiveness and skill that this small country is graced with
-                hundreds of ancient castles, monasteries and stately mansions, and even entire towns that give the
-                impression of being comprehensive artifacts. The Czech Republic contains a vast amount of architectural
-                treasure, as well as beautiful forests and mountains to match.</p>
-        
-        </div>
-        <div class="story">
-            <a class="h4" href="Hungary.html">Hungary</a>
+            <form>
+                <div class="no_zobaczymy">
+                    <label for="destination"><input list="destination_list">
+                        <datalist id="destination_list">
+                            <option value="Czech Republic">
+                            <option value="Hungary">
+                        </datalist>
+                        <label for="date"><input list="date_list">
+                            <datalist id="date_list">
+                            </datalist>
+                        </label>
+                        <button type="submit">Submit</button>
+                </div>
+            </form>
         </div>
     </section>
-
 </body>
 
 </html>
