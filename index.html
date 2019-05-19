@@ -12,13 +12,13 @@
 </head>
 
 <body>
-    <main>
+    <main class="main1">
         <nav>
             <ul class=menu>
-                <li class="buttons"><a href="#"><img src="plane.png"class="user"</a></li>
-                <li class="buttons"><a href="#">Tickets</a></li>
+                <li class="buttons"><a href="index.html"><img src="plane.png"class="user"</a></li>
+                <li class="buttons"><a href="tickets1.html">Tickets</a></li>
                 <li class="buttons"><a href="#"><img src="user_icon.png" class="user"></a></li>
-                <li class="buttons"><a href="#">About</a></li>
+                <li class="buttons"><a href="about.html">About</a></li>
             </ul>
         </nav>
         <div class="trapez"></div>
@@ -30,12 +30,6 @@
                 <span class="subtitle"><a href="#france">Flights</a></span>
             </div>
         </div>
-        <h1 class="title1" id="france">France</h1>
-        <p class="description">Cena, coś tam, coś tam</p>
-        <h1 class="title1" id="france">France</h1>
-        <p class="description">Cena, coś tam, coś tam</p>
-        <h1 class="title1" id="france">France</h1>
-        <p class="description">Cena, coś tam, coś tam</p>
         <h1 class="title1">Gallery</h1>
         <div class="w3-content w3-display-container" style="max-width:1000px">
             <img class="mySlides"
@@ -56,48 +50,17 @@
                 <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
             </div>
         </div>
+        <script src="java.js"></script>
 
 
 
-        <script>
-            var slideIndex = 1;
-            showDivs(slideIndex);
-
-            function plusDivs(n) {
-                showDivs(slideIndex += n);
-            }
-
-            function currentDiv(n) {
-                showDivs(slideIndex = n);
-            }
-
-            function showDivs(n) {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("demo");
-                if (n > x.length) {
-                    slideIndex = 1
-                }
-                if (n < 1) {
-                    slideIndex = x.length
-                }
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" w3-white", "");
-                }
-                x[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " w3-white";
-            }
-        </script>
-
+        
     </main>
     <footer>
-
+        <p>All rights reserved &copy;</p>
+        Author: <address>Tomek Kowalczyk</address>
     </footer>
 </body>
 
 </html>
 
-</html>
